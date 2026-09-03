@@ -14,27 +14,27 @@ const STATES = [
 ];
 
 const PRESIDENTES = [
-  { id: 100, name: "Lula da Silva", initials: "LS", cargo: "Presidente", partido: "PT", mandatos: 3, score: 5.9, processos: 1, "patrimônio_ini": "R$ 0", "patrimônio_fim": "R$ 7 mi", idade: 79, formacao: "Ensino médio incompleto", resumo: "Três mandatos presidenciais. Histórico de condenação pelo STJ revertida pelo STF por questões processuais. Governo atual marcado por alta inflação no início e recuperação gradual. Forte apelo popular entre classe trabalhadora.", tags: [{ label: "1 condenação revertida", type: "bad" }, { label: "3 mandatos", type: "neutral" }, { label: "Alta popularidade", type: "good" }], noticias: [{ titulo: "Aprovação do governo Lula oscila entre 35% e 45%", fonte: "Datafolha", data: "abr 2025" }], scores_cat: { integridade: 4.5, projetos: 6.2, presenca: 7.0, patrimonio: 4.8 } },
-  { id: 101, name: "Flávio Bolsonaro", initials: "FB", cargo: "Presidente", partido: "PL", mandatos: 2, score: 5.1, processos: 1, "patrimônio_ini": "R$ 300 mil", "patrimônio_fim": "R$ 1.8 mi", idade: 43, formacao: "Direito — UNIRIO", resumo: "Senador pelo Rio de Janeiro candidato à presidência pelo PL. Filho de Jair Bolsonaro, carrega o legado da família no eleitorado conservador. Um processo em andamento. Crescimento patrimonial acima da média.", tags: [{ label: "1 processo", type: "bad" }, { label: "2 mandatos", type: "neutral" }], noticias: [{ titulo: "Flávio Bolsonaro é oficializado candidato pelo PL", fonte: "G1", data: "jul 2026" }], scores_cat: { integridade: 5.0, projetos: 5.2, presenca: 5.8, patrimonio: 5.5 } },
-  { id: 102, name: "Ronaldo Caiado", initials: "RC2", cargo: "Presidente", partido: "PSD", mandatos: 3, score: 6.9, processos: 0, "patrimônio_ini": "R$ 1.2 mi", "patrimônio_fim": "R$ 2.8 mi", idade: 68, formacao: "Medicina — UFG", resumo: "Ex-governador de Goiás e pré-candidato à presidência. Médico de formação com histórico limpo. Gestão estadual com foco em segurança pública e infraestrutura. Uma das candidaturas mais sólidas do centro-direita.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "3 mandatos", type: "neutral" }], noticias: [{ titulo: "Caiado anuncia pré-candidatura à presidência em 2026", fonte: "O Popular", data: "mai 2025" }], scores_cat: { integridade: 8.2, projetos: 7.0, presenca: 7.5, patrimonio: 7.0 } },
-  { id: 103, name: "Romeu Zema", initials: "RZ2", cargo: "Presidente", partido: "Novo", mandatos: 2, score: 6.5, processos: 0, "patrimônio_ini": "R$ 12 mi", "patrimônio_fim": "R$ 18 mi", idade: 61, formacao: "Engenharia — UFMG", resumo: "Governador de MG e pré-candidato liberal. Empresário com gestão fiscal rigorosa. Ficha limpa. Forte apelo no eleitorado que busca alternativa ao bipartidarismo PT/PL.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "2 mandatos", type: "neutral" }], noticias: [{ titulo: "Zema confirma candidatura à presidência pelo Novo", fonte: "Folha de SP", data: "jun 2026" }], scores_cat: { integridade: 8.0, projetos: 6.8, presenca: 7.0, patrimonio: 5.5 } },
+  { id: 100, name: "Lula da Silva", initials: "LS", cargo: "Presidente", partido: "PT", mandatos: 3, score: 5.9, processos: 1, "patrimônio_ini": "R$ 0", "patrimônio_fim": "R$ 7 mi", idade: 79, formacao: "Ensino médio incompleto", resumo: "Três mandatos presidenciais. Histórico de condenação pelo STJ revertida pelo STF por questões processuais. Governo atual marcado por alta inflação no início e recuperação gradual.", tags: [{ label: "1 condenação revertida", type: "bad" }, { label: "3 mandatos", type: "neutral" }, { label: "Alta popularidade", type: "good" }], noticias: [{ titulo: "Aprovação do governo Lula oscila entre 35% e 45%", fonte: "Datafolha", data: "abr 2025" }], scores_cat: { integridade: 4.5, projetos: 6.2, presenca: 7.0, patrimonio: 4.8 } },
+  { id: 101, name: "Flávio Bolsonaro", initials: "FB", cargo: "Presidente", partido: "PL", mandatos: 2, score: 5.1, processos: 1, "patrimônio_ini": "R$ 300 mil", "patrimônio_fim": "R$ 1.8 mi", idade: 43, formacao: "Direito — UNIRIO", resumo: "Senador pelo Rio de Janeiro candidato à presidência pelo PL. Filho de Jair Bolsonaro, carrega o legado da família no eleitorado conservador.", tags: [{ label: "1 processo", type: "bad" }, { label: "2 mandatos", type: "neutral" }], noticias: [{ titulo: "Flávio Bolsonaro é oficializado candidato pelo PL", fonte: "G1", data: "jul 2026" }], scores_cat: { integridade: 5.0, projetos: 5.2, presenca: 5.8, patrimonio: 5.5 } },
+  { id: 102, name: "Ronaldo Caiado", initials: "RC2", cargo: "Presidente", partido: "PSD", mandatos: 3, score: 6.9, processos: 0, "patrimônio_ini": "R$ 1.2 mi", "patrimônio_fim": "R$ 2.8 mi", idade: 68, formacao: "Medicina — UFG", resumo: "Ex-governador de Goiás e pré-candidato à presidência. Médico de formação com histórico limpo.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "3 mandatos", type: "neutral" }], noticias: [{ titulo: "Caiado anuncia pré-candidatura à presidência em 2026", fonte: "O Popular", data: "mai 2025" }], scores_cat: { integridade: 8.2, projetos: 7.0, presenca: 7.5, patrimonio: 7.0 } },
+  { id: 103, name: "Romeu Zema", initials: "RZ2", cargo: "Presidente", partido: "Novo", mandatos: 2, score: 6.5, processos: 0, "patrimônio_ini": "R$ 12 mi", "patrimônio_fim": "R$ 18 mi", idade: 61, formacao: "Engenharia — UFMG", resumo: "Governador de MG e pré-candidato liberal. Empresário com gestão fiscal rigorosa. Ficha limpa.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "2 mandatos", type: "neutral" }], noticias: [{ titulo: "Zema confirma candidatura à presidência pelo Novo", fonte: "Folha de SP", data: "jun 2026" }], scores_cat: { integridade: 8.0, projetos: 6.8, presenca: 7.0, patrimonio: 5.5 } },
 ];
 
 const MOCK_CANDIDATES = {
   GO: [
     ...PRESIDENTES,
     { id: 1, name: "Ronaldo Caiado", initials: "RC", cargo: "Governador", partido: "PSD", mandatos: 2, score: 7.2, processos: 0, "patrimônio_ini": "R$ 1.2 mi", "patrimônio_fim": "R$ 2.8 mi", idade: 68, formacao: "Medicina — UFG", resumo: "Governador de Goiás em segundo mandato. Médico de formação, sem processos judiciais. Gestão com foco em segurança pública e infraestrutura.", tags: [{ label: "Sem processos", type: "good" }, { label: "2 mandatos", type: "neutral" }], noticias: [{ titulo: "Caiado inaugura hospital regional em Anápolis", fonte: "O Popular", data: "mar 2025" }], scores_cat: { integridade: 8.2, projetos: 7.0, presenca: 7.5, patrimonio: 7.8 } },
-    { id: 2, name: "Daniel Vilela", initials: "DV", cargo: "Governador", partido: "MDB", mandatos: 1, score: 6.8, processos: 0, "patrimônio_ini": "R$ 2.1 mi", "patrimônio_fim": "R$ 3.4 mi", idade: 44, formacao: "Direito — PUC Goiás", resumo: "Deputado federal e pré-candidato ao governo de Goiás. Filho do ex-governador Marconi Perillo. Ficha limpa, sem processos. Lidera pesquisas de intenção de voto para o governo estadual.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Daniel Vilela lidera cenários para governo de Goiás, aponta Quaest", fonte: "O Popular", data: "jul 2026" }], scores_cat: { integridade: 7.8, projetos: 6.5, presenca: 7.0, patrimonio: 7.0 } },
-    { id: 3, name: "Wolmir Amado", initials: "WA", cargo: "Governador", partido: "PT", mandatos: 1, score: 6.2, processos: 0, "patrimônio_ini": "R$ 320 mil", "patrimônio_fim": "R$ 580 mil", idade: 55, formacao: "Engenharia — UFG", resumo: "Ex-deputado federal candidato de oposição ao governo de Goiás. Ficha limpa. Propõe ampliação de programas sociais e reforma da gestão pública estadual.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Wolmir lança candidatura ao governo de Goiás pelo PT", fonte: "Diário de Goiás", data: "jun 2026" }], scores_cat: { integridade: 7.8, projetos: 6.5, presenca: 6.2, patrimonio: 7.5 } },
-    { id: 4, name: "Wilder Morais", initials: "WM", cargo: "Senador", partido: "PL", mandatos: 1, score: 6.8, processos: 0, "patrimônio_ini": "R$ 480 mil", "patrimônio_fim": "R$ 720 mil", idade: 52, formacao: "Direito — PUC Goiás", resumo: "Senador em primeiro mandato. Advogado de formação com histórico limpo. Votações alinhadas à base conservadora.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Wilder Morais busca reeleição ao Senado por Goiás", fonte: "Agência Senado", data: "mai 2026" }], scores_cat: { integridade: 7.5, projetos: 6.8, presenca: 7.2, patrimonio: 7.8 } },
-    { id: 5, name: "Leila Barros", initials: "LB", cargo: "Senadora", partido: "PDT", mandatos: 1, score: 7.8, processos: 0, "patrimônio_ini": "R$ 210 mil", "patrimônio_fim": "R$ 390 mil", idade: 56, formacao: "Educação Física — UCB", resumo: "Ex-jogadora de vôlei e senadora com histórico limpo. Um dos mandatos mais bem avaliados do Senado em projetos aprovados.", tags: [{ label: "Sem processos", type: "good" }, { label: "Alta presença", type: "good" }], noticias: [{ titulo: "Leila Barros aprova projeto de incentivo ao esporte escolar", fonte: "Agência Senado", data: "jan 2025" }], scores_cat: { integridade: 8.8, projetos: 8.0, presenca: 8.2, patrimonio: 8.5 } },
+    { id: 2, name: "Daniel Vilela", initials: "DV", cargo: "Governador", partido: "MDB", mandatos: 1, score: 6.8, processos: 0, "patrimônio_ini": "R$ 2.1 mi", "patrimônio_fim": "R$ 3.4 mi", idade: 44, formacao: "Direito — PUC Goiás", resumo: "Deputado federal e pré-candidato ao governo de Goiás. Filho do ex-governador Marconi Perillo. Ficha limpa. Lidera pesquisas de intenção de voto.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Daniel Vilela lidera cenários para governo de Goiás", fonte: "O Popular", data: "jul 2026" }], scores_cat: { integridade: 7.8, projetos: 6.5, presenca: 7.0, patrimonio: 7.0 } },
+    { id: 3, name: "Wolmir Amado", initials: "WA", cargo: "Governador", partido: "PT", mandatos: 1, score: 6.2, processos: 0, "patrimônio_ini": "R$ 320 mil", "patrimônio_fim": "R$ 580 mil", idade: 55, formacao: "Engenharia — UFG", resumo: "Ex-deputado federal candidato de oposição ao governo de Goiás. Ficha limpa.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Wolmir lança candidatura ao governo de Goiás pelo PT", fonte: "Diário de Goiás", data: "jun 2026" }], scores_cat: { integridade: 7.8, projetos: 6.5, presenca: 6.2, patrimonio: 7.5 } },
+    { id: 4, name: "Wilder Morais", initials: "WM", cargo: "Senador", partido: "PL", mandatos: 1, score: 6.8, processos: 0, "patrimônio_ini": "R$ 480 mil", "patrimônio_fim": "R$ 720 mil", idade: 52, formacao: "Direito — PUC Goiás", resumo: "Senador em primeiro mandato. Advogado de formação com histórico limpo.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Wilder Morais busca reeleição ao Senado", fonte: "Agência Senado", data: "mai 2026" }], scores_cat: { integridade: 7.5, projetos: 6.8, presenca: 7.2, patrimonio: 7.8 } },
+    { id: 5, name: "Leila Barros", initials: "LB", cargo: "Senadora", partido: "PDT", mandatos: 1, score: 7.8, processos: 0, "patrimônio_ini": "R$ 210 mil", "patrimônio_fim": "R$ 390 mil", idade: 56, formacao: "Educação Física — UCB", resumo: "Ex-jogadora de vôlei e senadora com histórico limpo. Um dos mandatos mais bem avaliados do Senado.", tags: [{ label: "Sem processos", type: "good" }, { label: "Alta presença", type: "good" }], noticias: [{ titulo: "Leila Barros aprova projeto de incentivo ao esporte escolar", fonte: "Agência Senado", data: "jan 2025" }], scores_cat: { integridade: 8.8, projetos: 8.0, presenca: 8.2, patrimonio: 8.5 } },
     { id: 6, name: "Adriana Accorsi", initials: "AA", cargo: "Dep. Estadual", partido: "PT", mandatos: 2, score: 7.5, processos: 0, "patrimônio_ini": "R$ 160 mil", "patrimônio_fim": "R$ 310 mil", idade: 45, formacao: "Serviço Social — PUC Goiás", resumo: "Deputada estadual em segundo mandato com foco em saúde e assistência social. Ficha limpa.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "2 mandatos", type: "neutral" }], noticias: [{ titulo: "Adriana Accorsi aprova projeto de saúde mental nas escolas", fonte: "O Popular", data: "mar 2025" }], scores_cat: { integridade: 8.8, projetos: 7.5, presenca: 7.8, patrimonio: 8.2 } },
-    { id: 7, name: "Adilson Teixeira", initials: "AT", cargo: "Dep. Estadual", partido: "PSD", mandatos: 4, score: 2.1, processos: 3, "patrimônio_ini": "R$ 380 mil", "patrimônio_fim": "R$ 5.2 mi", idade: 63, formacao: "Não declarada", resumo: "Ficha extremamente irregular. Quatro mandatos com três processos judiciais ativos incluindo investigação por desvio de verba pública.", tags: [{ label: "Ficha suja", type: "bad" }, { label: "3 processos", type: "bad" }, { label: "Enriquecimento ilícito", type: "bad" }], noticias: [{ titulo: "Adilson Teixeira é alvo de operação da PF por desvio de emendas", fonte: "G1 Goiás", data: "mar 2025" }], scores_cat: { integridade: 1.0, projetos: 2.8, presenca: 3.5, patrimonio: 1.0 } },
+    { id: 7, name: "Adilson Teixeira", initials: "AT", cargo: "Dep. Estadual", partido: "PSD", mandatos: 4, score: 2.1, processos: 3, "patrimônio_ini": "R$ 380 mil", "patrimônio_fim": "R$ 5.2 mi", idade: 63, formacao: "Não declarada", resumo: "Ficha extremamente irregular. Quatro mandatos com três processos judiciais ativos.", tags: [{ label: "Ficha suja", type: "bad" }, { label: "3 processos", type: "bad" }, { label: "Enriquecimento ilícito", type: "bad" }], noticias: [{ titulo: "Adilson Teixeira é alvo de operação da PF", fonte: "G1 Goiás", data: "mar 2025" }], scores_cat: { integridade: 1.0, projetos: 2.8, presenca: 3.5, patrimonio: 1.0 } },
   ],
   SP: [
     ...PRESIDENTES,
     { id: 20, name: "Tarcísio de Freitas", initials: "TF", cargo: "Governador", partido: "Republicanos", mandatos: 1, score: 7.4, processos: 0, "patrimônio_ini": "R$ 600 mil", "patrimônio_fim": "R$ 980 mil", idade: 49, formacao: "Engenharia Militar — IME", resumo: "Governador de São Paulo em primeiro mandato. Ex-ministro com histórico técnico sólido. Ficha limpa.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "Alta aprovação", type: "good" }], noticias: [{ titulo: "SP registra queda de 20% nos homicídios sob gestão Tarcísio", fonte: "Folha de SP", data: "abr 2025" }], scores_cat: { integridade: 8.5, projetos: 7.2, presenca: 7.8, patrimonio: 8.0 } },
-    { id: 21, name: "Fernando Haddad", initials: "FH", cargo: "Governador", partido: "PT", mandatos: 1, score: 6.3, processos: 0, "patrimônio_ini": "R$ 400 mil", "patrimônio_fim": "R$ 850 mil", idade: 61, formacao: "Direito — USP", resumo: "Ministro da Fazenda candidato ao governo de SP. Economista com histórico limpo. Propõe alternativa à gestão Tarcísio focando em inclusão e transporte público.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Haddad confirma candidatura ao governo de SP", fonte: "Folha de SP", data: "jun 2026" }], scores_cat: { integridade: 7.5, projetos: 6.8, presenca: 6.5, patrimonio: 7.2 } },
+    { id: 21, name: "Fernando Haddad", initials: "FH", cargo: "Governador", partido: "PT", mandatos: 1, score: 6.3, processos: 0, "patrimônio_ini": "R$ 400 mil", "patrimônio_fim": "R$ 850 mil", idade: 61, formacao: "Direito — USP", resumo: "Ministro da Fazenda candidato ao governo de SP. Economista com histórico limpo.", tags: [{ label: "Ficha limpa", type: "good" }, { label: "1 mandato", type: "neutral" }], noticias: [{ titulo: "Haddad confirma candidatura ao governo de SP", fonte: "Folha de SP", data: "jun 2026" }], scores_cat: { integridade: 7.5, projetos: 6.8, presenca: 6.5, patrimonio: 7.2 } },
   ],
   MG: [
     ...PRESIDENTES,
@@ -44,7 +44,7 @@ const MOCK_CANDIDATES = {
 
 function getCandidates(stateAbbr) {
   return MOCK_CANDIDATES[stateAbbr] || PRESIDENTES.concat([
-    { id: 999, name: "Candidatos locais em breve", initials: "??", cargo: "Governador", partido: "A confirmar", mandatos: 0, score: 5.0, processos: 0, "patrimônio_ini": "N/A", "patrimônio_fim": "N/A", idade: 0, formacao: "N/A", resumo: `Os candidatos de ${stateAbbr} serão cadastrados após o registro oficial no TSE em julho/agosto de 2026.`, tags: [{ label: "Aguardando TSE", type: "neutral" }], noticias: [], scores_cat: { integridade: 5.0, projetos: 5.0, presenca: 5.0, patrimonio: 5.0 } }
+    { id: 999, name: "Candidatos locais em breve", initials: "??", cargo: "Governador", partido: "A confirmar", mandatos: 0, score: 5.0, processos: 0, "patrimônio_ini": "N/A", "patrimônio_fim": "N/A", idade: 0, formacao: "N/A", resumo: `Os candidatos serão cadastrados após o registro oficial no TSE em julho/agosto de 2026.`, tags: [{ label: "Aguardando TSE", type: "neutral" }], noticias: [], scores_cat: { integridade: 5.0, projetos: 5.0, presenca: 5.0, patrimonio: 5.0 } }
   ]);
 }
 
@@ -71,25 +71,42 @@ function getVerdict(score) {
   return { label: "NÃO RECOMENDADO", color: "#A32D2D" };
 }
 
-const CLAUDE_SYSTEM = `Você é o motor de análise do Votook, plataforma brasileira de análise de candidatos políticos para as eleições de 2026. Responda SEMPRE em português do Brasil. Seja direto, claro e objetivo.`;
-
 async function callClaude(prompt) {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-6",
-      max_tokens: 1500,
-      system: CLAUDE_SYSTEM,
-      tools: [{ type: "web_search_20250305", name: "web_search" }],
-      messages: [{ role: "user", content: prompt }]
-    })
+    headers: { "Content-Type": "application/json", "x-api-key": process.env.REACT_APP_ANTHROPIC_KEY || "", "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
+    body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 1500, system: "Você é o motor de análise do Votook, plataforma brasileira de análise de candidatos políticos para as eleições de 2026. Responda SEMPRE em português do Brasil. Seja direto, claro e objetivo.", tools: [{ type: "web_search_20250305", name: "web_search" }], messages: [{ role: "user", content: prompt }] })
   });
   const data = await response.json();
   return data.content?.filter(b => b.type === "text").map(b => b.text).join("") || "Sem resposta.";
 }
 
-// ─── SCREENS ────────────────────────────────────────────────────
+function BottomNav({ current, onNext }) {
+  const items = [
+    { id: "candidatos", label: "Candidatos", icon: "🗳️", screen: "states" },
+    { id: "pesquisas", label: "Pesquisas", icon: "📊", screen: "pesquisas" },
+    { id: "tira-duvida", label: "Tira Dúvida", icon: "🤔", screen: "tira-duvida" },
+  ];
+  return (
+    <div style={{ position: "sticky", bottom: 0, background: "#0D1F35", borderTop: "0.5px solid rgba(255,255,255,0.08)", display: "flex", padding: "12px 0 20px", zIndex: 100 }}>
+      {items.map(item => (
+        <button key={item.id} onClick={() => onNext(item.screen)} style={{ flex: 1, background: "none", border: "none", color: current === item.id ? "#00C896" : "rgba(255,255,255,0.35)", fontSize: 11, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, fontWeight: current === item.id ? 600 : 400 }}>
+          <span style={{ fontSize: 20 }}>{item.icon}</span>{item.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function Spinner({ text }) {
+  return (
+    <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "24px", textAlign: "center" }}>
+      <div style={{ width: 32, height: 32, border: "2px solid rgba(0,200,150,0.3)", borderTopColor: "#00C896", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 12px" }} />
+      <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>{text}</p>
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+    </div>
+  );
+}
 
 function SplashScreen({ onNext }) {
   return (
@@ -215,18 +232,7 @@ function StatesScreen({ onNext, user }) {
           </button>
         ))}
       </div>
-      {/* Bottom nav */}
-      <div style={{ position: "sticky", bottom: 0, background: "#0D1F35", borderTop: "0.5px solid rgba(255,255,255,0.08)", display: "flex", padding: "12px 0 20px" }}>
-        <button onClick={() => onNext("states")} style={{ flex: 1, background: "none", border: "none", color: "#00C896", fontSize: 11, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-          <span style={{ fontSize: 20 }}>🗳️</span>Candidatos
-        </button>
-        <button onClick={() => onNext("pesquisas")} style={{ flex: 1, background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 11, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-          <span style={{ fontSize: 20 }}>📊</span>Pesquisas
-        </button>
-        <button onClick={() => onNext("tira-duvida")} style={{ flex: 1, background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 11, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-          <span style={{ fontSize: 20 }}>🤔</span>Tira Dúvida
-        </button>
-      </div>
+      <BottomNav current="candidatos" onNext={onNext} />
     </div>
   );
 }
@@ -254,7 +260,7 @@ function CandidatesScreen({ onNext, state, user }) {
         </div>
       </div>
       <div style={{ padding: "8px 0 4px 20px" }}><span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)" }}>Ordenado por IA • do melhor ao pior</span></div>
-      <div style={{ flex: 1, padding: "8px 16px 100px", display: "flex", flexDirection: "column", gap: 10 }}>
+      <div style={{ flex: 1, padding: "8px 16px 20px", display: "flex", flexDirection: "column", gap: 10 }}>
         {filtered.map((c, i) => {
           const col = getInitialsColor(c.score); const scoreCol = getScoreColor(c.score); const fillCol = getScoreFill(c.score);
           return (
@@ -287,38 +293,19 @@ function CandidatesScreen({ onNext, state, user }) {
 
 function PesquisasScreen({ onNext }) {
   const [cargo, setCargo] = useState("Presidente");
-  const [estado, setEstado] = useState("Nacional");
+  const [estado, setEstado] = useState("GO");
   const [resultado, setResultado] = useState("");
   const [loading, setLoading] = useState(false);
   const [buscado, setBuscado] = useState(false);
-
   const cargos = ["Presidente", "Governador", "Senador"];
-  const estados = ["Nacional", "GO", "SP", "MG", "RJ", "BA", "RS", "PR", "PE", "CE"];
 
-  const buscarPesquisas = async () => {
+  const buscar = async () => {
     setLoading(true); setResultado(""); setBuscado(false);
     try {
-      const escopo = estado === "Nacional" ? "nacional" : `no estado de ${estado}`;
-      const prompt = `Busque na internet as pesquisas eleitorais mais recentes de 2026 para o cargo de ${cargo} ${escopo} no Brasil.
-
-Procure especificamente por pesquisas dos institutos: Datafolha, Quaest, AtlasIntel, Ipespe, Paraná Pesquisas.
-
-Para cada pesquisa encontrada, apresente:
-- Nome do instituto
-- Data de realização
-- Quem contratou a pesquisa
-- Principais candidatos e suas porcentagens de intenção de voto
-- Margem de erro
-
-Organize as informações de forma clara e objetiva para o eleitor. Cite sempre a fonte e a data. Se não encontrar pesquisas recentes, diga explicitamente.
-
-Ao final, dê um breve comentário sobre o que as pesquisas indicam sobre o cenário eleitoral atual.`;
-
-      const texto = await callClaude(prompt);
+      const escopo = cargo === "Presidente" ? "para presidente da República no Brasil" : `para ${cargo} no estado de ${estado}`;
+      const texto = await callClaude(`Busque na internet as pesquisas eleitorais mais recentes de 2026 ${escopo}. Procure por pesquisas dos institutos Datafolha, Quaest, AtlasIntel, Ipespe e Paraná Pesquisas. Para cada pesquisa encontrada apresente: nome do instituto, data, quem contratou, principais candidatos e percentuais, margem de erro. Ao final, comente o que as pesquisas indicam sobre o cenário atual. Cite sempre a fonte e a data.`);
       setResultado(texto);
-    } catch (e) {
-      setResultado("⚠️ Erro ao buscar pesquisas. Verifique sua conexão e tente novamente.");
-    }
+    } catch { setResultado("⚠️ Não foi possível buscar as pesquisas. Tente novamente."); }
     setLoading(false); setBuscado(true);
   };
 
@@ -327,113 +314,83 @@ Ao final, dê um breve comentário sobre o que as pesquisas indicam sobre o cen�
       <div style={{ background: "linear-gradient(180deg, #0D1F35 0%, #070F1C 100%)", padding: "44px 20px 20px" }}>
         <div style={{ fontSize: 22, fontWeight: 900, color: "#fff", fontFamily: "'Georgia', serif", letterSpacing: -0.5, marginBottom: 4 }}>Voto<span style={{ color: "#00C896" }}>ok</span></div>
         <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginBottom: 16 }}>Pesquisas eleitorais em tempo real</div>
-
-        <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
           {cargos.map(c => (<button key={c} onClick={() => setCargo(c)} style={{ padding: "7px 16px", borderRadius: 20, border: `0.5px solid ${cargo === c ? "#00C896" : "rgba(255,255,255,0.15)"}`, background: cargo === c ? "rgba(0,200,150,0.15)" : "transparent", color: cargo === c ? "#00C896" : "rgba(255,255,255,0.5)", fontSize: 13, cursor: "pointer", fontWeight: cargo === c ? 600 : 400 }}>{c}</button>))}
         </div>
-
-        {cargo === "Governador" && (
-          <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 4 }}>
-            {estados.filter(e => e !== "Nacional").map(e => (<button key={e} onClick={() => setEstado(e)} style={{ flexShrink: 0, padding: "5px 12px", borderRadius: 20, border: `0.5px solid ${estado === e ? "#00C896" : "rgba(255,255,255,0.15)"}`, background: estado === e ? "rgba(0,200,150,0.15)" : "transparent", color: estado === e ? "#00C896" : "rgba(255,255,255,0.5)", fontSize: 12, cursor: "pointer" }}>{e}</button>))}
-          </div>
+        {cargo !== "Presidente" && (
+          <select value={estado} onChange={e => setEstado(e.target.value)} style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "10px 14px", fontSize: 14, color: "#fff", outline: "none" }}>
+            {STATES.map(s => (<option key={s.abbr} value={s.abbr} style={{ background: "#0D1F35" }}>{s.abbr} — {s.name}</option>))}
+          </select>
         )}
       </div>
-
-      <div style={{ flex: 1, padding: "16px 20px 100px" }}>
-        {/* Institutos de referência */}
+      <div style={{ flex: 1, padding: "16px 20px 20px" }}>
         <div style={{ marginBottom: 16 }}>
-          <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>Institutos de referência</div>
+          <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>Institutos confiáveis</div>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            {[
-              { nome: "Datafolha", nota: "★★★★★", cor: "#00C896" },
-              { nome: "Quaest", nota: "★★★★★", cor: "#00C896" },
-              { nome: "AtlasIntel", nota: "★★★★☆", cor: "#639922" },
-              { nome: "Ipespe", nota: "★★★★☆", cor: "#639922" },
-              { nome: "Paraná Pesq.", nota: "★★★☆☆", cor: "#BA7517" },
-            ].map(inst => (
-              <div key={inst.nome} style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 10, padding: "8px 12px", display: "flex", flexDirection: "column", gap: 2 }}>
-                <span style={{ fontSize: 12, fontWeight: 600, color: "#fff" }}>{inst.nome}</span>
-                <span style={{ fontSize: 10, color: inst.cor }}>{inst.nota}</span>
+            {[{ nome: "Datafolha", nota: "★★★★★" }, { nome: "Quaest", nota: "★★★★★" }, { nome: "AtlasIntel", nota: "★★★★☆" }, { nome: "Ipespe", nota: "★★★★☆" }, { nome: "Paraná Pesq.", nota: "★★★☆☆" }].map(inst => (
+              <div key={inst.nome} style={{ background: "rgba(255,255,255,0.04)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 10, padding: "8px 12px" }}>
+                <div style={{ fontSize: 12, fontWeight: 600, color: "#fff" }}>{inst.nome}</div>
+                <div style={{ fontSize: 10, color: "#00C896" }}>{inst.nota}</div>
               </div>
             ))}
           </div>
         </div>
-
-        <button onClick={buscarPesquisas} disabled={loading} style={{ width: "100%", background: loading ? "rgba(0,200,150,0.4)" : "#00C896", border: "none", borderRadius: 12, padding: "15px", fontSize: 14, fontWeight: 700, color: "#070F1C", cursor: "pointer", marginBottom: 20 }}>
-          {loading ? "🔍 Buscando pesquisas na internet..." : `📊 Buscar pesquisas de ${cargo}${cargo === "Governador" ? ` — ${estado}` : ""}`}
+        <button onClick={buscar} disabled={loading} style={{ width: "100%", background: loading ? "rgba(0,200,150,0.4)" : "#00C896", border: "none", borderRadius: 12, padding: "15px", fontSize: 14, fontWeight: 700, color: "#070F1C", cursor: "pointer", marginBottom: 16 }}>
+          {loading ? "🔍 Buscando pesquisas..." : `📊 Buscar pesquisas — ${cargo}${cargo !== "Presidente" ? ` (${estado})` : ""}`}
         </button>
-
-        {loading && (
-          <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "24px", textAlign: "center" }}>
-            <div style={{ width: 32, height: 32, border: "2px solid rgba(0,200,150,0.3)", borderTopColor: "#00C896", borderRadius: "50%", animation: "spin 0.8s linear infinite", margin: "0 auto 12px" }} />
-            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>A IA está buscando as pesquisas mais recentes nos principais institutos...</p>
-            <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
-          </div>
-        )}
-
+        {loading && <Spinner text="A IA está buscando as pesquisas mais recentes nos principais institutos..." />}
         {buscado && resultado && (
           <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(0,200,150,0.15)", borderRadius: 12, padding: "16px" }}>
             <div style={{ display: "flex", gap: 8, marginBottom: 12, alignItems: "center" }}>
               <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#00C896" }} />
-              <span style={{ fontSize: 11, color: "#00C896", fontWeight: 600 }}>Pesquisas buscadas em tempo real pela IA Votook</span>
+              <span style={{ fontSize: 11, color: "#00C896", fontWeight: 600 }}>Pesquisas buscadas em tempo real — IA Votook</span>
             </div>
             <div style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", lineHeight: 1.8, whiteSpace: "pre-wrap" }}>{resultado}</div>
           </div>
         )}
-
         {!buscado && !loading && (
-          <div style={{ background: "rgba(0,200,150,0.05)", border: "0.5px solid rgba(0,200,150,0.15)", borderRadius: 12, padding: "20px", textAlign: "center" }}>
-            <div style={{ fontSize: 32, marginBottom: 12 }}>📊</div>
-            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>Clique no botão acima para a IA buscar as pesquisas eleitorais mais recentes dos institutos mais confiáveis do Brasil.</p>
+          <div style={{ background: "rgba(0,200,150,0.05)", border: "0.5px solid rgba(0,200,150,0.15)", borderRadius: 12, padding: "24px", textAlign: "center" }}>
+            <div style={{ fontSize: 36, marginBottom: 12 }}>📊</div>
+            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>Selecione o cargo e clique em buscar. A IA vai na internet e traz as pesquisas mais recentes dos institutos mais confiáveis do Brasil.</p>
           </div>
         )}
       </div>
-
       <BottomNav current="pesquisas" onNext={onNext} />
     </div>
   );
 }
 
-function TiraDuvidaScreen({ onNext }) {
-  const [candidato1, setCandidato1] = useState("");
-  const [candidato2, setCandidato2] = useState("");
-  const [cargo, setCargo] = useState("Governador");
+function TiraDuvidaScreen({ onNext, ctx }) {
+  const [cargo, setCargo] = useState("Presidente");
   const [estado, setEstado] = useState("GO");
+  const [cand1, setCand1] = useState(null);
+  const [cand2, setCand2] = useState(null);
   const [resultado, setResultado] = useState("");
   const [loading, setLoading] = useState(false);
   const [analisado, setAnalisado] = useState(false);
-
   const cargos = ["Presidente", "Governador", "Senador", "Dep. Federal", "Dep. Estadual"];
 
+  const estadoObj = STATES.find(s => s.abbr === estado) || STATES[8];
+  const todosCandidatos = getCandidates(estadoObj.abbr);
+  const candidatosFiltrados = todosCandidatos.filter(c => {
+    if (cargo === "Presidente") return c.cargo === "Presidente";
+    return c.cargo.toLowerCase().includes(cargo.toLowerCase().replace("dep. ", "dep")) && c.cargo !== "Presidente";
+  });
+
+  const selecionar = (cand) => {
+    if (!cand1) { setCand1(cand); return; }
+    if (cand1.id === cand.id) { setCand1(null); return; }
+    if (!cand2) { setCand2(cand); return; }
+    if (cand2.id === cand.id) { setCand2(null); return; }
+  };
+
   const analisar = async () => {
-    if (!candidato1.trim() || !candidato2.trim()) return;
+    if (!cand1 || !cand2) return;
     setLoading(true); setResultado(""); setAnalisado(false);
     try {
-      const prompt = `O eleitor está com dúvida entre dois candidatos para ${cargo} ${cargo !== "Presidente" ? `em ${estado}` : ""} nas eleições de 2026:
-
-Candidato 1: ${candidato1}
-Candidato 2: ${candidato2}
-
-Faça uma análise comparativa honesta e imparcial buscando informações na internet sobre cada um. Analise:
-
-1. HISTÓRICO POLÍTICO de cada um (mandatos, cargos, realizações)
-2. INTEGRIDADE (processos, investigações, ficha limpa)
-3. PROPOSTAS E POSICIONAMENTOS conhecidos
-4. PATRIMÔNIO declarado e evolução
-5. DESEMPENHO em pesquisas eleitorais recentes
-
-Ao final, apresente:
-- PONTOS FORTES de cada candidato
-- PONTOS FRACOS de cada candidato  
-- RECOMENDAÇÃO BASEADA EM DADOS: qual parece ser a escolha mais segura e por quê
-
-Seja honesto mesmo que a análise seja desfavorável a um dos candidatos. O eleitor precisa de informação real, não de diplomacia.`;
-
-      const texto = await callClaude(prompt);
+      const texto = await callClaude(`O eleitor está com dúvida entre dois candidatos para ${cargo}${cargo !== "Presidente" ? ` em ${estado}` : ""} nas eleições 2026:\n\nCandidato 1: ${cand1.name} (${cand1.partido}) — Nota Votook: ${cand1.score}/10\nCandidato 2: ${cand2.name} (${cand2.partido}) — Nota Votook: ${cand2.score}/10\n\nFaça uma análise comparativa honesta e imparcial buscando informações na internet. Analise: histórico político, integridade (processos, ficha limpa), propostas conhecidas, patrimônio, desempenho em pesquisas recentes. Apresente: PONTOS FORTES de cada um, PONTOS FRACOS de cada um, RECOMENDAÇÃO BASEADA EM DADOS com justificativa clara.`);
       setResultado(texto);
-    } catch (e) {
-      setResultado("⚠️ Erro ao analisar. Verifique sua conexão e tente novamente.");
-    }
+    } catch { setResultado("⚠️ Não foi possível analisar. Tente novamente."); }
     setLoading(false); setAnalisado(true);
   };
 
@@ -441,49 +398,65 @@ Seja honesto mesmo que a análise seja desfavorável a um dos candidatos. O elei
     <div style={{ minHeight: "100vh", background: "#070F1C", display: "flex", flexDirection: "column" }}>
       <div style={{ background: "linear-gradient(180deg, #0D1F35 0%, #070F1C 100%)", padding: "44px 20px 20px" }}>
         <div style={{ fontSize: 22, fontWeight: 900, color: "#fff", fontFamily: "'Georgia', serif", letterSpacing: -0.5, marginBottom: 4 }}>Voto<span style={{ color: "#00C896" }}>ok</span></div>
-        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginBottom: 4 }}>Tira Dúvida — Compare dois candidatos</div>
-        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", lineHeight: 1.5 }}>Não sabe entre quem votar? Digite os dois nomes e a IA faz uma análise comparativa baseada em dados reais.</p>
+        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginBottom: 4 }}>Tira Dúvida — Compare candidatos</div>
+        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", lineHeight: 1.5, marginBottom: 12 }}>Selecione o cargo, o estado e toque em 2 candidatos para comparar.</p>
+        <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 8 }}>
+          {cargos.map(c => (<button key={c} onClick={() => { setCargo(c); setCand1(null); setCand2(null); setAnalisado(false); setResultado(""); }} style={{ flexShrink: 0, padding: "6px 14px", borderRadius: 20, border: `0.5px solid ${cargo === c ? "#00C896" : "rgba(255,255,255,0.15)"}`, background: cargo === c ? "rgba(0,200,150,0.15)" : "transparent", color: cargo === c ? "#00C896" : "rgba(255,255,255,0.5)", fontSize: 12, cursor: "pointer", fontWeight: cargo === c ? 600 : 400 }}>{c}</button>))}
+        </div>
+        {cargo !== "Presidente" && (
+          <select value={estado} onChange={e => { setEstado(e.target.value); setCand1(null); setCand2(null); setAnalisado(false); setResultado(""); }} style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "10px 14px", fontSize: 14, color: "#fff", outline: "none", marginTop: 8 }}>
+            {STATES.map(s => (<option key={s.abbr} value={s.abbr} style={{ background: "#0D1F35" }}>{s.abbr} — {s.name}</option>))}
+          </select>
+        )}
       </div>
 
-      <div style={{ flex: 1, padding: "16px 20px 100px" }}>
-        <div style={{ marginBottom: 16 }}>
-          <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>Cargo disputado</div>
-          <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 4 }}>
-            {cargos.map(c => (<button key={c} onClick={() => setCargo(c)} style={{ flexShrink: 0, padding: "6px 14px", borderRadius: 20, border: `0.5px solid ${cargo === c ? "#00C896" : "rgba(255,255,255,0.15)"}`, background: cargo === c ? "rgba(0,200,150,0.15)" : "transparent", color: cargo === c ? "#00C896" : "rgba(255,255,255,0.5)", fontSize: 12, cursor: "pointer", fontWeight: cargo === c ? 600 : 400 }}>{c}</button>))}
-          </div>
-        </div>
-
-        {cargo !== "Presidente" && (
-          <div style={{ marginBottom: 16 }}>
-            <label style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.55)", marginBottom: 6 }}>Estado</label>
-            <select value={estado} onChange={e => setEstado(e.target.value)} style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "12px 14px", fontSize: 14, color: "#fff", outline: "none" }}>
-              {STATES.map(s => (<option key={s.abbr} value={s.abbr} style={{ background: "#0D1F35" }}>{s.abbr} — {s.name}</option>))}
-            </select>
-          </div>
-        )}
-
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
-          <div>
-            <label style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.55)", marginBottom: 6 }}>Candidato 1</label>
-            <input value={candidato1} onChange={e => setCandidato1(e.target.value)} placeholder="Ex: Daniel Vilela" style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "12px 14px", fontSize: 14, color: "#fff", outline: "none" }} />
-          </div>
-          <div>
-            <label style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.55)", marginBottom: 6 }}>Candidato 2</label>
-            <input value={candidato2} onChange={e => setCandidato2(e.target.value)} placeholder="Ex: Wolmir Amado" style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "0.5px solid rgba(255,255,255,0.12)", borderRadius: 10, padding: "12px 14px", fontSize: 14, color: "#fff", outline: "none" }} />
-          </div>
-        </div>
-
-        <button onClick={analisar} disabled={loading || !candidato1.trim() || !candidato2.trim()} style={{ width: "100%", background: (loading || !candidato1.trim() || !candidato2.trim()) ? "rgba(0,200,150,0.3)" : "#00C896", border: "none", borderRadius: 12, padding: "15px", fontSize: 14, fontWeight: 700, color: "#070F1C", cursor: "pointer", marginBottom: 20 }}>
-          {loading ? "🔍 Analisando os dois candidatos..." : "Comparar candidatos →"}
-        </button>
-
-        {loading && (
-          <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "24px", textAlign: "center" }}>
-            <div style={{ width: 32, height: 32, border: "2px solid rgba(0,200,150,0.3)", borderTopColor: "#00C896", borderRadius: "50%", animation: "spin2 0.8s linear infinite", margin: "0 auto 12px" }} />
-            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Buscando informações sobre {candidato1} e {candidato2}...</p>
-            <style>{`@keyframes spin2 { to { transform: rotate(360deg); } }`}</style>
+      <div style={{ flex: 1, padding: "16px 20px 20px" }}>
+        {/* Selecionados */}
+        {(cand1 || cand2) && (
+          <div style={{ background: "rgba(0,200,150,0.08)", border: "0.5px solid rgba(0,200,150,0.2)", borderRadius: 12, padding: "12px 16px", marginBottom: 14, display: "flex", gap: 10, alignItems: "center" }}>
+            <div style={{ flex: 1, fontSize: 13, color: "#fff" }}>
+              {cand1 && <div style={{ marginBottom: cand2 ? 4 : 0 }}>✓ <strong>{cand1.name}</strong></div>}
+              {cand2 && <div>✓ <strong>{cand2.name}</strong></div>}
+              {!cand2 && <div style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", marginTop: 4 }}>Selecione mais 1 candidato abaixo</div>}
+            </div>
+            {cand1 && cand2 && (
+              <button onClick={analisar} disabled={loading} style={{ background: "#00C896", border: "none", borderRadius: 10, padding: "10px 18px", fontSize: 13, fontWeight: 700, color: "#070F1C", cursor: "pointer", flexShrink: 0 }}>
+                {loading ? "..." : "Comparar →"}
+              </button>
+            )}
           </div>
         )}
+
+        {/* Lista de candidatos */}
+        <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>
+          {candidatosFiltrados.length > 0 ? "Toque para selecionar (escolha 2)" : "Candidatos"}
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 16 }}>
+          {candidatosFiltrados.length === 0 && (
+            <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "20px", textAlign: "center", color: "rgba(255,255,255,0.4)", fontSize: 13 }}>
+              Nenhum candidato cadastrado para este cargo/estado ainda.
+            </div>
+          )}
+          {candidatosFiltrados.map(c => {
+            const sel1 = cand1?.id === c.id;
+            const sel2 = cand2?.id === c.id;
+            const selecionado = sel1 || sel2;
+            const col = getInitialsColor(c.score);
+            return (
+              <div key={c.id} onClick={() => selecionar(c)} style={{ background: selecionado ? "rgba(0,200,150,0.1)" : "rgba(255,255,255,0.03)", border: `0.5px solid ${selecionado ? "#00C896" : "rgba(255,255,255,0.08)"}`, borderRadius: 12, padding: "12px 16px", cursor: "pointer", display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{ width: 10, height: 10, borderRadius: "50%", border: `2px solid ${selecionado ? "#00C896" : "rgba(255,255,255,0.2)"}`, background: selecionado ? "#00C896" : "transparent", flexShrink: 0 }} />
+                <div style={{ width: 38, height: 38, borderRadius: "50%", background: col.bg, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, color: col.color, flexShrink: 0 }}>{c.initials}</div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "#fff" }}>{c.name}</div>
+                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", marginTop: 1 }}>{c.partido}</div>
+                </div>
+                <div style={{ fontSize: 16, fontWeight: 800, color: getScoreColor(c.score) }}>{c.score.toFixed(1)}</div>
+              </div>
+            );
+          })}
+        </div>
+
+        {loading && <Spinner text={`Buscando informações sobre ${cand1?.name} e ${cand2?.name}...`} />}
 
         {analisado && resultado && (
           <div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(0,200,150,0.15)", borderRadius: 12, padding: "16px" }}>
@@ -494,34 +467,8 @@ Seja honesto mesmo que a análise seja desfavorável a um dos candidatos. O elei
             <div style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", lineHeight: 1.8, whiteSpace: "pre-wrap" }}>{resultado}</div>
           </div>
         )}
-
-        {!analisado && !loading && (
-          <div style={{ background: "rgba(0,200,150,0.05)", border: "0.5px solid rgba(0,200,150,0.15)", borderRadius: 12, padding: "20px", textAlign: "center" }}>
-            <div style={{ fontSize: 32, marginBottom: 12 }}>🤔</div>
-            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.7 }}>Digite os nomes dos dois candidatos que você está comparando e a IA vai buscar informações reais sobre cada um e te ajudar a decidir.</p>
-          </div>
-        )}
       </div>
-
       <BottomNav current="tira-duvida" onNext={onNext} />
-    </div>
-  );
-}
-
-function BottomNav({ current, onNext }) {
-  const items = [
-    { id: "candidatos", label: "Candidatos", icon: "🗳️", screen: "states" },
-    { id: "pesquisas", label: "Pesquisas", icon: "📊", screen: "pesquisas" },
-    { id: "tira-duvida", label: "Tira Dúvida", icon: "🤔", screen: "tira-duvida" },
-  ];
-  return (
-    <div style={{ position: "sticky", bottom: 0, background: "#0D1F35", borderTop: "0.5px solid rgba(255,255,255,0.08)", display: "flex", padding: "12px 0 20px", zIndex: 100 }}>
-      {items.map(item => (
-        <button key={item.id} onClick={() => onNext(item.screen)} style={{ flex: 1, background: "none", border: "none", color: current === item.id ? "#00C896" : "rgba(255,255,255,0.35)", fontSize: 11, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, fontWeight: current === item.id ? 600 : 400 }}>
-          <span style={{ fontSize: 20 }}>{item.icon}</span>
-          {item.label}
-        </button>
-      ))}
     </div>
   );
 }
@@ -531,13 +478,12 @@ function DetailScreen({ onNext, candidate: c }) {
   const [loadingAI, setLoadingAI] = useState(false);
   const [aiLoaded, setAiLoaded] = useState(false);
   const scoreCol = getScoreColor(c.score); const col = getInitialsColor(c.score); const verdict = getVerdict(c.score);
-  const fetchAIAnalysis = async () => {
+  const fetchAI = async () => {
     setLoadingAI(true); setAiLoaded(false); setAiAnalysis("");
     try {
-      const prompt = `Analise este candidato político e gere um parecer detalhado para o eleitor:\n\nNome: ${c.name}\nCargo: ${c.cargo}\nPartido: ${c.partido}\nMandatos anteriores: ${c.mandatos}\nProcessos judiciais: ${c.processos}\nPatrimônio inicial: ${c["patrimônio_ini"]}\nPatrimônio atual: ${c["patrimônio_fim"]}\nIdade: ${c.idade} anos\nFormação: ${c.formacao}\nNota geral: ${c.score}/10\n\nBusque informações adicionais na internet sobre este candidato. Gere:\n1. PARECER GERAL (2 parágrafos)\n2. PONTOS POSITIVOS (bullet points)\n3. PONTOS DE ATENÇÃO (bullet points)\n4. RECOMENDAÇÃO FINAL (uma frase direta)`;
-      const text = await callClaude(prompt);
-      setAiAnalysis(text); setAiLoaded(true);
-    } catch (err) { setAiAnalysis("⚠️ Erro ao carregar análise. Tente novamente."); setAiLoaded(true); }
+      const texto = await callClaude(`Analise este candidato e gere um parecer para o eleitor:\nNome: ${c.name}\nCargo: ${c.cargo}\nPartido: ${c.partido}\nMandatos: ${c.mandatos}\nProcessos: ${c.processos}\nPatrimônio inicial: ${c["patrimônio_ini"]}\nPatrimônio atual: ${c["patrimônio_fim"]}\nIdade: ${c.idade}\nFormação: ${c.formacao}\nNota: ${c.score}/10\n\nBusque informações adicionais na internet. Gere:\n1. PARECER GERAL (2 parágrafos)\n2. PONTOS POSITIVOS\n3. PONTOS DE ATENÇÃO\n4. RECOMENDAÇÃO FINAL`);
+      setAiAnalysis(texto); setAiLoaded(true);
+    } catch { setAiAnalysis("⚠️ Erro ao carregar análise. Tente novamente."); setAiLoaded(true); }
     setLoadingAI(false);
   };
   return (
@@ -586,16 +532,14 @@ function DetailScreen({ onNext, candidate: c }) {
         </div>
         <div>
           <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>Análise completa da IA</div>
-          {!aiLoaded && !loadingAI && (<button onClick={fetchAIAnalysis} style={{ width: "100%", background: "rgba(0,200,150,0.1)", border: "0.5px solid rgba(0,200,150,0.3)", borderRadius: 12, padding: "16px", fontSize: 14, fontWeight: 600, color: "#00C896", cursor: "pointer" }}>Gerar análise completa com IA →</button>)}
-          {loadingAI && (<div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "24px 16px", textAlign: "center" }}><div style={{ width: 32, height: 32, border: "2px solid rgba(0,200,150,0.3)", borderTopColor: "#00C896", borderRadius: "50%", animation: "spin3 0.8s linear infinite", margin: "0 auto 12px" }} /><p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Analisando candidato...</p><style>{`@keyframes spin3 { to { transform: rotate(360deg); } }`}</style></div>)}
+          {!aiLoaded && !loadingAI && (<button onClick={fetchAI} style={{ width: "100%", background: "rgba(0,200,150,0.1)", border: "0.5px solid rgba(0,200,150,0.3)", borderRadius: 12, padding: "16px", fontSize: 14, fontWeight: 600, color: "#00C896", cursor: "pointer" }}>Gerar análise completa com IA →</button>)}
+          {loadingAI && <Spinner text="Analisando candidato..." />}
           {aiLoaded && (<div style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(0,200,150,0.15)", borderRadius: 12, padding: "16px" }}><div style={{ display: "flex", gap: 8, marginBottom: 12, alignItems: "center" }}><div style={{ width: 6, height: 6, borderRadius: "50%", background: "#00C896" }} /><span style={{ fontSize: 11, color: "#00C896", fontWeight: 600 }}>Análise gerada pela IA Votook</span></div><div style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.8, whiteSpace: "pre-wrap" }}>{aiAnalysis}</div></div>)}
         </div>
         {c.noticias.length > 0 && (
           <div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>Notícias encontradas</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              {c.noticias.map((n, i) => (<div key={i} style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "12px 14px" }}><div style={{ fontSize: 13, fontWeight: 500, color: "#fff", lineHeight: 1.4 }}>{n.titulo}</div><div style={{ display: "flex", gap: 8, marginTop: 6 }}><span style={{ fontSize: 11, color: "#00C896" }}>{n.fonte}</span><span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)" }}>• {n.data}</span></div></div>))}
-            </div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>Notícias</div>
+            {c.noticias.map((n, i) => (<div key={i} style={{ background: "rgba(255,255,255,0.03)", border: "0.5px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "12px 14px", marginBottom: 8 }}><div style={{ fontSize: 13, fontWeight: 500, color: "#fff" }}>{n.titulo}</div><div style={{ display: "flex", gap: 8, marginTop: 4 }}><span style={{ fontSize: 11, color: "#00C896" }}>{n.fonte}</span><span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)" }}>• {n.data}</span></div></div>))}
           </div>
         )}
         <div style={{ background: "rgba(0,200,150,0.06)", border: "0.5px solid rgba(0,200,150,0.2)", borderRadius: 12, padding: "14px 16px", display: "flex", alignItems: "center", gap: 12 }}>
@@ -620,7 +564,7 @@ export default function App() {
       {screen === "candidates" && <CandidatesScreen onNext={goTo} state={ctx.state || { abbr: "GO", name: "Goiás" }} user={ctx.user} />}
       {screen === "detail" && <DetailScreen onNext={goTo} candidate={ctx.candidate} user={ctx.user} />}
       {screen === "pesquisas" && <PesquisasScreen onNext={goTo} />}
-      {screen === "tira-duvida" && <TiraDuvidaScreen onNext={goTo} />}
+      {screen === "tira-duvida" && <TiraDuvidaScreen onNext={goTo} ctx={ctx} />}
     </div>
   );
 }
