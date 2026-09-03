@@ -1,8 +1,3 @@
-bash
-
-cat /mnt/user-data/outputs/votook.jsx
-Saída
-
 import { useState } from "react";
 
 const STATES = [
